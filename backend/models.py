@@ -12,7 +12,7 @@ class User(db.Model):
     password = db.Column(db.String(200), nullable=False)    # hashed with bcrypt
     faculty = db.Column(db.String(80), nullable=False)
     year = db.Column(db.String(80), nullable=False)
-    apt_block = db.Column(db.String(80), nullable=False)
+    dorm_block = db.Column(db.String(80), nullable=False)
     room = db.Column(db.String(80), nullable=False)     # may need to change to integer, depending on naming convention
     is_admin = db.Column(db.Boolean, default=False)
     
@@ -48,7 +48,7 @@ class UsersShema(ma.Schema):
     credit = ma.Nested(credits_schema, many=True)
     class Meta:
         # Fields to expose
-        fields = ('id', 'first_name', 'last_name', 'email', 'password', 'faculty', 'year', 'apt_block', 'room', 'is_admin', 'credit')
+        fields = ('id', 'first_name', 'last_name', 'email', 'password', 'faculty', 'year', 'dorm_block', 'room', 'is_admin', 'credit')
         
 users_schema = UsersShema()
     
