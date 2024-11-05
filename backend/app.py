@@ -74,7 +74,7 @@ def users():
             email = email,
             faculty = faculty,
             year = year,
-            apt_block = block,
+            dorm_block = block,
             room = room
         )
         new_user.set_password(password) #hashes input password
@@ -144,14 +144,14 @@ def reports():
                 query = query.filter(Ticket.uploaded.between(start_date, end_date))
 
             # Fetch the tickets with associated user data
-            tickets = query.add_columns(User.apt_block, User.room).all()
+            tickets = query.add_columns(User.dorm_block, User.room).all()
 
             result = [
                 {
                     "ticket": tickets_schema.dump(ticket),
-                    "apt_block": apt_block,
+                    "dorm_block": dorm_block,
                     "room": room
-                } for ticket, apt_block, room in tickets
+                } for ticket, dorm_block, room in tickets
             ]
             print(result)
             return jsonify(result)
@@ -181,14 +181,14 @@ def reports():
     elif request.method == 'GET':
         if curr_user['is_admin']:
             query = Ticket.query.join(User).filter(User.id == Ticket.user_id)
-            tickets = query.add_columns(User.apt_block, User.room).all()
+            tickets = query.add_columns(User.dorm_block, User.room).all()
 
             report_data = [
                 {
                     "ticket": tickets_schema.dump(ticket),
-                    "apt_block": apt_block,
+                    "dorm_block": dorm_block,
                     "room": room
-                } for ticket, apt_block, room in tickets
+                } for ticket, dorm_block, room in tickets
             ]
             return jsonify(report_data)
         else:
