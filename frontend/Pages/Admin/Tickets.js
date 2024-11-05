@@ -161,7 +161,7 @@ function Tickets(){
                         return (
                           <tr key={index}>
                             <td>{report.ticket.id}</td>
-                            <td>{`${report.apt_block} ${report.room}`}</td>
+                            <td>{`${report.dorm_block} ${report.room}`}</td>
                             <td>{report.ticket.type}</td>
                             <td>{report.ticket.details}</td>
                             <td>{report.ticket.status}</td>

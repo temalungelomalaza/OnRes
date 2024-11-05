@@ -52,7 +52,7 @@ function Users(){
                             <td>{`${user.first_name} ${user.last_name}`}</td>
                             <td>{user.email}</td>
                             <td>{user.faculty}</td>
-                            <td>{`${user.apt_block} ${user.room}`}</td>
+                            <td>{`${user.dorm_block} ${user.room}`}</td>
                             <td>{latestCredit.curr_credit}</td>
                             <td>{latestCredit.curr_overdraft}</td>
                           </tr>
