@@ -56,8 +56,8 @@ class Ticket(db.Model):
     id = db.Column(db.Integer(), primary_key=True)   
     user_id = db.Column(db.Integer, db.ForeignKey('user.id', ondelete='CASCADE'), nullable=False)
     details = db.Column(db.String(320), nullable=False)
-    type = db.Column(db.String(20), nullable=False) #selection menu (plumbing, electrical, furniture, other)
-    status = db.Column(db.String(20), nullable=False)   #updated on admin side (pending, accepted, in progress, closed)
+    type = db.Column(db.String(20), nullable=False) #selection menu (flooring,plumbing, electrical, furniture, other)
+    status = db.Column(db.String(20), nullable=False)   #updated on admin side (pending, accepted, in progress, completed)
     uploaded = db.Column(db.DateTime, nullable=False, default=db.func.now())
     last_actioned = db.Column(db.DateTime, nullable=False, default=db.func.now())
 
