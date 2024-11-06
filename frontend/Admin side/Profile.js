@@ -38,7 +38,7 @@ function Profile(){
                     <img src={profile} alt="UNESWA logo" className="img-fluid"/>
                     <div>
                         <h1 class="pt-lg-5 px-3">Welcome to OnRes!</h1>
-                        <h5 class="px-3">Your digital dorm key and accommodation hub.</h5>
+                        <h4 class="px-3">Your digital dorm key and accommodation hub.</h4>
                     </div>
                 </div>
             </Container>
@@ -65,7 +65,7 @@ function Profile(){
 
                                 <InputGroup className="mb-2">
                                     <InputGroup.Text>Block</InputGroup.Text>
-                                    <Form.Control value={user.dormblock} />   
+                                    <Form.Control value={user.dorm_block} />   
                                 </InputGroup>
 
                                 <InputGroup className="mb-2">
