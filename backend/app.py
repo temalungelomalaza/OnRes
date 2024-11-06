@@ -11,7 +11,7 @@ from sqlalchemy import func # type: ignore
 from config import db, Config
 from models import *
  
-def create_app():   #creating flask app
+def create_app():   #creates Flask app
     app = Flask(__name__)
     app.config.from_object(Config)
 
@@ -20,7 +20,7 @@ def create_app():   #creating flask app
     migrate = Migrate(app, db)
     jwt = JWTManager(app)   #handles web sessions 
     bcrypt = Bcrypt(app)
-    CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}}, supports_credentials=True)   #for cross-platform transmission/access of data
+    CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}}, supports_credentials=True)   #to achieve cross-platform transmission and the access of data
 
     with app.app_context():
         upgrade()
