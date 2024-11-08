@@ -17,7 +17,7 @@ def create_app():   #creates Flask app
     # Initialize components
     db.init_app(app)
     migrate = Migrate(app, db)
-    jwt = JWTManager(app)   #handles web sessions 
+    jwt = JWTManager(app)   #handles web sessions
     bcrypt = Bcrypt(app)
     CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}}, supports_credentials=True)   #to achieve cross-platform transmission and the access of data
 
