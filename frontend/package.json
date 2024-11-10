@@ -17,11 +17,18 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+"eslintConfig" :{
+  "extends":[
+    "react-app",
+    "react-app/jest"
+  ],
+  
+    "name": "name",
+    "description": "description",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {}
   },
   "browserslist": {
     "production": [
