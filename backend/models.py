@@ -44,13 +44,13 @@ class CreditShema(ma.Schema):
         
 credits_schema = CreditShema()
 
-class UsersShema(ma.Schema):
+class UsersShcema(ma.Schema):
     credit = ma.Nested(credits_schema, many=True)
     class Meta:
         # Fields to expose
         fields = ('id', 'first_name', 'last_name', 'email', 'password', 'faculty', 'year', 'dorm_block', 'room', 'is_admin', 'credit')
         
-users_schema = UsersShema()
+users_schema = UsersShcema()
     
 class Ticket(db.Model):
     id = db.Column(db.Integer(), primary_key=True)   

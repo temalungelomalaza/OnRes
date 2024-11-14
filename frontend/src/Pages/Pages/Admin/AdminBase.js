@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import AdminNav from "../../Components/AdminNav";
+import AdminNav from "../../../Components/AdminNav";
 
 function AdminBase({onLogout}){
     return(

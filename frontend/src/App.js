@@ -2,7 +2,16 @@ import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
+import Base from './Admin side/Base';
+import Home from './Admin side/Welcome';
+import Profile from './Admin side/Profile';
+import Report from './Admin side/Report';
+import Register from './Admin side/Register';
+import AdminBase from './Pages/Pages/Admin/AdminBase';
+import Users from './Pages/Pages/Admin/AdminProfile';
+import Tickets from './Pages/Pages/Admin/Tickets';
+import UserCredits from './Pages/Pages/Admin/UserCredits';
+import api from './Authentication/API';
 
 function App() {
 
