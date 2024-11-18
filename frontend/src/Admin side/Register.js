@@ -80,7 +80,7 @@ function Register(){
                             <Form.Control as="textarea" value={year} onChange={(e) => setYear(e.target.value)} required rows={1} />
                         </InputGroup>
                         <InputGroup className="mb-2">
-                            <InputGroup.Text>Acc Block:</InputGroup.Text>
+                            <InputGroup.Text>Dorm Block:</InputGroup.Text>
                             <Form.Control as="textarea" value={block} onChange={(e) => setBlock(e.target.value)} required rows={1} />
                         </InputGroup>
                         <InputGroup className="mb-2">
