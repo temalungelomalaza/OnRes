@@ -19,3 +19,23 @@ OnRes will include the following web pages and functionalities
      ## Backend
 The backend of the system runs on Flask, an open source API, and SQL lite, which serves as a relational database management system. 
 Flask allows the querying of the databse using Python, suitably connecting requests and responses between the user interface and database.
+
+# Steps to run the system:
+
+1. Change directory to 'backend' and run the commands type {one by one}:
+    cd backend
+    flask db migrate
+    flask db upgrade
+   
+This will ensure all the migrations to the database are up to date. 
+
+2. Run the app.py file, type:
+   python app.py
+   
+3. Change directories to 'frontend'
+   cd frontend
+4. Latly,start the webapp using the following command:
+   
+        npm start
+
+The webapp should run!
