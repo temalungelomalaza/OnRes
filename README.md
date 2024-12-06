@@ -25,7 +25,9 @@ Flask allows the querying of the databse using Python, suitably connecting reque
 1. Change directory to 'backend' and run the commands type {one by one}:
    
     cd backend
+
     flask db migrate
+
     flask db upgrade
    
 This will ensure all the migrations to the database are up to date. 
