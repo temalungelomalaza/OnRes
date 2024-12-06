@@ -11,5 +11,4 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'sqlite:///web_dorm.db?check_same_thread=False'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_SECRET_KEY = 'jwt123'  
-
     JWT_ACCESS_TOKEN_EXPIRES = 3600  #web token is pre-set for 60minutes before expiry
