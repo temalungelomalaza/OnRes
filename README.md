@@ -23,6 +23,7 @@ Flask allows the querying of the databse using Python, suitably connecting reque
 # Steps to run the system:
 
 1. Change directory to 'backend' and run the commands type {one by one}:
+   
     cd backend
     flask db migrate
     flask db upgrade
@@ -30,10 +31,13 @@ Flask allows the querying of the databse using Python, suitably connecting reque
 This will ensure all the migrations to the database are up to date. 
 
 2. Run the app.py file, type:
+
    python app.py
    
 3. Change directories to 'frontend'
+   
    cd frontend
+   
 4. Latly,start the webapp using the following command:
    
         npm start
