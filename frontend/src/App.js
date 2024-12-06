@@ -10,7 +10,7 @@ import Register from './Admin side/Register';
 import AdminBase from './Pages/Pages/Admin/AdminBase';
 import Users from './Pages/Pages/Admin/AdminProfile';
 import Tickets from './Pages/Pages/Admin/Tickets';
-import UserCredits from './Pages/Pages/Admin/UserCredits';
+import UserCredits from './Pages/Pages/Admin/UserCredits.js';
 import api from './Authentication/API';
 
 function App() {
