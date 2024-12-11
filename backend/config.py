@@ -8,7 +8,7 @@ migrate = Migrate()
 
 class Config:
     SECRET_KEY = b'***************************************'
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///web_dorm.db?check_same_thread=False'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://onres:webapp1@localhost/web_dorm.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_SECRET_KEY = 'jwt123'  
     JWT_ACCESS_TOKEN_EXPIRES = 3600  #web token is pre-set for 60minutes before expiry
