@@ -1,0 +1,8 @@
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
+engine = create_engine('mysql+mysqlconnector://onres:webapp1@host:port/web_dorm.db')
+Session = sessionmaker(bind=engine)
+session = Session()
+
+# Query the database and export data to a CSV file, JSON file, or other formats
